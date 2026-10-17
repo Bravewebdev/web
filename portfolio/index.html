@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Brave.exe — программист</title>
+<meta name="description" content="Brave.exe — программист с 7-летним стажем. Мобильные приложения, десктоп, бэкенды и криптография. Беру любые тяжёлые задачи." />
+<meta name="theme-color" content="#0c0c0e" />
+<meta property="og:title" content="Brave.exe — программист" />
+<meta property="og:description" content="7 лет в разработке. Flutter, Python, Kotlin, бэкенды и криптография." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230c0c0e'/%3E%3Cpath d='M18 16h14c9 0 15 6 15 14S41 44 32 44H26v8h-8z' fill='%23f2efe9'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="backdrop" aria-hidden="true">
+    <div class="backdrop__grid"></div>
+    <div class="backdrop__glow backdrop__glow--a"></div>
+    <div class="backdrop__glow backdrop__glow--b"></div>
+  </div>
+
+  <a class="skip" href="#projects">К проектам</a>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="Brave.exe — наверх">
+      <span class="nav__mark" aria-hidden="true">B</span>
+      <span class="nav__name">Brave<em>.exe</em></span>
+    </a>
+    <nav class="nav__links" aria-label="Навигация">
+      <a href="#skills">Стек</a>
+      <a href="#projects">Проекты</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="nav__right">
+      <button class="contact-pop" type="button" id="contactPop" title="Скопировать @xaqozi">
+        <span>@xaqozi</span>
+        <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5h10"/></svg>
+      </button>
+      <button class="nav__toggle" type="button" id="navToggle" aria-label="Меню" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="eyebrow" data-reveal>
+          <span class="dot"></span> открыт для задач
+        </p>
+        <h1 class="hero__title" data-reveal style="--i:1">
+          Brave<em>.exe</em>
+        </h1>
+        <p class="hero__sub" data-reveal style="--i:2">
+          Программист. <span class="hl">7 лет</span> в разработке — от мобильных
+          приложений до бэкендов и криптографии.
+        </p>
+        <p class="hero__lead" data-reveal style="--i:3">
+          Написал много проектов. Не боюсь тяжёлых задач: чем сложнее архитектура,
+          тем интереснее. Пишите в Telegram —
+          <a class="inline-link" href="https://t.me/xaqozi" target="_blank" rel="noopener">@xaqozi</a>.
+        </p>
+        <div class="hero__actions" data-reveal style="--i:4">
+          <a class="btn btn--primary" href="https://t.me/xaqozi" target="_blank" rel="noopener">
+            Написать в Telegram
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#projects">Смотреть проекты</a>
+        </div>
+
+        <dl class="stats" data-reveal style="--i:5">
+          <div class="stat">
+            <dt class="stat__value"><span data-count="7">0</span><span class="stat__suffix"> лет</span></dt>
+            <dd class="stat__label">в разработке</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__value"><span data-count="40">0</span><span class="stat__suffix">+</span></dt>
+            <dd class="stat__label">проектов и задач</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__value"><span class="mono">∞</span></dt>
+            <dd class="stat__label">тяжесть задач</dd>
+          </div>
+        </dl>
+      </div>
+
+      <aside class="codecard" data-reveal style="--i:3" aria-hidden="true">
+        <div class="codecard__bar">
+          <span class="codecard__dot"></span><span class="codecard__dot"></span><span class="codecard__dot"></span>
+          <span class="codecard__file">brave.dart</span>
+        </div>
+        <pre class="codecard__code"><code id="codeType"></code><span class="caret"></span></pre>
+      </aside>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Flutter</span><span>·</span><span>Dart</span><span>·</span><span>Python</span><span>·</span>
+          <span>Kotlin</span><span>·</span><span>Django</span><span>·</span><span>PostgreSQL</span><span>·</span>
+          <span>Cryptography</span><span>·</span><span>REST</span><span>·</span><span>Linux</span><span>·</span>
+          <span>Flutter</span><span>·</span><span>Dart</span><span>·</span><span>Python</span><span>·</span>
+          <span>Kotlin</span><span>·</span><span>Django</span><span>·</span><span>PostgreSQL</span><span>·</span>
+          <span>Cryptography</span><span>·</span><span>REST</span><span>·</span><span>Linux</span><span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section__head" data-reveal>
+        <p class="kicker">01 — стек</p>
+        <h2>С чем работаю</h2>
+        <p class="section__lead">Полный цикл: от интерфейса до базы данных и инфраструктуры.</p>
+      </div>
+
+      <div class="skills">
+        <article class="card card--tilt" data-reveal>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18.5h2"/></svg>
+          </div>
+          <h3>Мобильная разработка</h3>
+          <p>Flutter и Dart: приложения под Android и iOS с одинаковым кодом, кастомная графика, анимации.</p>
+          <ul class="tags"><li>Flutter</li><li>Dart</li><li>Kotlin</li><li>Material/Cupertino</li></ul>
+        </article>
+
+        <article class="card card--tilt" data-reveal>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+          </div>
+          <h3>Десктоп и инструменты</h3>
+          <p>Утилиты, игры и приложения для ПК. Tkinter, консольные инструменты, автоматизация рутины.</p>
+          <ul class="tags"><li>Python</li><li>Tkinter</li><li>CLI</li><li>Windows/Linux</li></ul>
+        </article>
+
+        <article class="card card--tilt" data-reveal>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.66 3.58 3 8 3s8-1.34 8-3V6"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
+          </div>
+          <h3>Бэкенд и данные</h3>
+          <p>API, аутентификация, хранение и синхронизация данных между клиентами.</p>
+          <ul class="tags"><li>Python</li><li>REST API</li><li>PostgreSQL</li><li>SQLite</li></ul>
+        </article>
+
+        <article class="card card--tilt" data-reveal>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6z"/><path d="M9.5 12l2 2 3.5-4"/></svg>
+          </div>
+          <h3>Криптография и безопасность</h3>
+          <p>Сквозное шифрование, обмен ключами, цифровые подписи, безопасное хранение секретов.</p>
+          <ul class="tags"><li>X25519</li><li>Ed25519</li><li>AES-GCM</li><li>HKDF</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section__head" data-reveal>
+        <p class="kicker">02 — проекты</p>
+        <h2>Что уже написано</h2>
+        <p class="section__lead">Часть работ, в которые было вложено больше всего сил.</p>
+      </div>
+
+      <div class="projects">
+        <article class="project" data-reveal data-spot>
+          <div class="project__top">
+            <span class="project__num mono">01</span>
+            <span class="pill">мессенджер</span>
+          </div>
+          <h3>Anongram</h3>
+          <p>
+            Анонимный мессенджер со сквозным шифрованием: ключи генерируются на устройстве,
+            сообщения шифруются X25519 + AES-GCM и не читаются сервером. Поиск
+            собеседника по отпечатку ключа.
+          </p>
+          <ul class="tags"><li>Flutter</li><li>Dart</li><li>X25519</li><li>AES-GCM</li><li>Ed25519</li></ul>
+        </article>
+
+        <article class="project" data-reveal data-spot>
+          <div class="project__top">
+            <span class="project__num mono">02</span>
+            <span class="pill">игра</span>
+          </div>
+          <h3>Snake: Python + Flutter</h3>
+          <p>
+            Змейка в двух версиях: десктопная на Python/Tkinter и мобильная на Flutter.
+            Три сложности с плавным ускорением, свайп-управление, отрисовка через
+            <span class="mono">CustomPainter</span>. Сборка релизного APK.
+          </p>
+          <ul class="tags"><li>Python</li><li>Tkinter</li><li>Flutter</li><li>Kotlin</li></ul>
+        </article>
+
+        <article class="project" data-reveal data-spot>
+          <div class="project__top">
+            <span class="project__num mono">03</span>
+            <span class="pill">безопасность</span>
+          </div>
+          <h3>Локальное хранилище секретов</h3>
+          <p>
+            Слой <span class="mono">Vault</span> для приватных данных: ключи не покидают
+            устройство, обмен сессионными ключами через HKDF, восстановление аккаунта
+            по seed-фразе.
+          </p>
+          <ul class="tags"><li>Dart</li><li>HKDF</li><li>Crypto</li><li>SharedPreferences</li></ul>
+        </article>
+
+        <article class="project" data-reveal data-spot>
+          <div class="project__top">
+            <span class="project__num mono">04</span>
+            <span class="pill">API</span>
+          </div>
+          <h3>Клиент-сервер для мессенджера</h3>
+          <p>
+            REST-слой с профилями, диалогами и историей сообщений. Обработка ошибок,
+            пагинация, восстановление после обрыва связи.
+          </p>
+          <ul class="tags"><li>Python</li><li>REST</li><li>JSON</li><li>PostgreSQL</li></ul>
+        </article>
+
+        <article class="project" data-reveal data-spot>
+          <div class="project__top">
+            <span class="project__num mono">05</span>
+            <span class="pill">утилиты</span>
+          </div>
+          <h3>Инструменты под задачи</h3>
+          <p>
+            Скрипты и автоматизация: сборка, парсинг, массовая обработка файлов.
+            Пишу то, что экономит часы ручной работы.
+          </p>
+          <ul class="tags"><li>Python</li><li>Bash</li><li>Gradle</li></ul>
+        </article>
+
+        <article class="project project--cta" data-reveal>
+          <h3>Ваш проект — следующий</h3>
+          <p>Расскажите задачу — предложу архитектуру и оценку.</p>
+          <a class="btn btn--primary btn--sm" href="https://t.me/xaqozi" target="_blank" rel="noopener">Написать @xaqozi</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--split" id="about">
+      <div class="about" data-reveal>
+        <p class="kicker">03 — обо мне</p>
+        <h2>Семь лет, и это только<em> разгон</em></h2>
+        <p>
+          Начал писать код в 7 лет назад и с тех пор не остановился. За это время
+          прошёл путь от маленьких скриптов до приложений с криптографией,
+          синхронизацией данных и собственными интерфейсами.
+        </p>
+        <p>
+          Мне нравится разбирать сложные вещи: нестандартные архитектуры, низкоуровневые
+          протоколы, производительность, безопасность. Если задача кажется «слишком
+          тяжёлой» — это как раз мой случай.
+        </p>
+        <ul class="checks">
+          <li>Довожу до рабочей сборки, а не до прототипа</li>
+          <li>Читаю код целиком и держу единый стиль</li>
+          <li>Отвечаю в Telegram быстро</li>
+        </ul>
+      </div>
+
+      <div class="timeline" data-reveal>
+        <div class="timeline__item">
+          <span class="timeline__year mono">Старт</span>
+          <div>
+            <h4>Первые строки кода</h4>
+            <p>Скрипты, игры, эксперименты.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__year mono">Python</span>
+          <div>
+            <h4>Десктоп и автоматизация</h4>
+            <p>Tkinter, консольные инструменты, алгоритмы.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__year mono">Мобилки</span>
+          <div>
+            <h4>Flutter / Dart</h4>
+            <p>Приложения под Android и iOS, кастомная отрисовка.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__year mono">Сейчас</span>
+          <div>
+            <h4>Безопасность и сложные системы</h4>
+            <p>Сквозное шифрование, API, синхронизация.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact__box" data-reveal>
+        <p class="kicker">04 — контакты</p>
+        <h2>Есть тяжёлая задача?</h2>
+        <p class="contact__lead">Пишите в Telegram — отвечу и обсудим детали.</p>
+        <a class="contact__handle" href="https://t.me/xaqozi" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M21.5 3.5L2.8 10.7c-.9.35-.88 1.6.03 1.9l4.6 1.5 1.75 5.2c.26.78 1.27.95 1.77.29l2.4-3.15 4.6 3.4c.7.52 1.7.13 1.9-.72l3.2-14.2c.2-.9-.7-1.6-1.55-1.22z"/></svg>
+          @xaqozi
+        </a>
+        <p class="contact__hint">Нажмите, чтобы открыть чат · или скопируйте ник</p>
+        <button class="btn btn--ghost btn--sm" type="button" id="copyHandle" data-handle="@xaqozi">Скопировать @xaqozi</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="mono">Brave.exe</span>
+    <span class="footer__dots" aria-hidden="true"></span>
+    <a href="https://t.me/xaqozi" target="_blank" rel="noopener">@xaqozi</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
